@@ -11,13 +11,20 @@
 			data-sap-ui-theme="sap_bluecrystal"
 			data-sap-ui-libs="sap.m"
 			data-sap-ui-compatVersion="edge"
-			data-sap-ui-preload="async">
+            data-sap-ui-preload="async"
+            data-sap-ui-resourceroots='{
+			"mckesson.eu.my-webapp": "./"
+		}'>
+
 		</script>
 
 
 		<script>
 			sap.ui.getCore().attachInit(function () {
-				alert("SAPUI5 is ready");
+				sap.ui.xmlview({
+				viewName: "mckesson.eu.my-webapp.view.App"
+			}).placeAt("content");
+
 			});
         </script>
         
