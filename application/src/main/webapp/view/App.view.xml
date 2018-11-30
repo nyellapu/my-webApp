@@ -1,12 +1,15 @@
 <mvc:View
     displayBlock="true"
 	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc">
+	xmlns:mvc="sap.ui.core.mvc"
+    controllerName="mckesson.eu.my-webapp.controller.App">
     <Carousel>
 		<pages>
 			<Image src="https://images.pexels.com/photos/38537/woodland-road-falling-leaf-natural-38537.jpeg" height="600px"/>
             <Image src="https://images.pexels.com/photos/1028707/pexels-photo-1028707.jpeg" height="600px"/>
 		</pages>
 	</Carousel>
-
+    <Button
+		text="Say Hello!"
+		press="onShowHello"/>
 </mvc:View>
