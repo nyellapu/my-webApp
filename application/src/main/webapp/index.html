@@ -21,10 +21,9 @@
 
 		<script>
 			sap.ui.getCore().attachInit(function () {
-				sap.ui.xmlview({
-				viewName: "mckesson.eu.my-webapp.view.App"
+				new sap.ui.core.ComponentContainer({
+				name : "mckesson.eu.my-webapp"
 			}).placeAt("content");
-
 			});
         </script>
         
