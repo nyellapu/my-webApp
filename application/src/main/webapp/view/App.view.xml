@@ -81,9 +81,22 @@
 							</IconTabFilter>
 							<IconTabFilter text="{i18n>DataFilter}"
 										   key="db">
-								<List headerText="{i18n>ProductListHeader}"
+								<List id="invoiceList"
 									  width="auto"
-									  items="{/ProductSet}">
+									  items="{
+									  			path : '/ProductSet',
+												sorter : {
+													path: 'Category',
+													group: true
+												}
+											}">
+									  <headerToolbar>
+										  <Toolbar>
+										  	<Title text="{i18n>ProductListHeader}"/>
+											<ToolbarSpacer/>
+											<SearchField width="50%" search="onFilterProducts"/>
+										  </Toolbar>
+										</headerToolbar>									  	
 									  <items>
 									  	<ObjectListItem
 											title="{Name}"
