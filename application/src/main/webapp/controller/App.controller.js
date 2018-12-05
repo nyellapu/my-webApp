@@ -1,11 +1,13 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "sap/m/MessageToast"
-], function (Controller, MessageToast) {
+	"sap/m/MessageToast",
+	"mckesson/eu/my-webapp/model/formatter"
+], function (Controller, MessageToast, formatter) {
 	"use strict";
 
     return Controller.extend("mckesson.eu.my-webapp.controller.App", {
 
+		formatter : formatter,
 		onShowHello : function () {
 			// show a native JavaScript alert
 			//MessageToast.show("Hello openSAP");
