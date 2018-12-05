@@ -12,6 +12,7 @@ applications:
     TARGET_RUNTIME: tomee
     JBP_CONFIG_SAPJVM_MEMORY_SIZES: 'metaspace:96m..'
     SET_LOGGING_LEVEL: '{ROOT: INFO, com.sap.cloud.sdk: INFO}'
+    destinations: "[{name: 'ES5', url: 'https://sapes5.sapdevcenter.com', sap-client:'002', username: 'S0011042960', password: 'XhJzJmP9UL3aXgk'}]"
 #  services:
 #  - my-application-logs
 #  - my-xsuaa

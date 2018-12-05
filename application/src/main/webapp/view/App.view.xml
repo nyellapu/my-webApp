@@ -18,6 +18,13 @@
 								<pages>
 									<Image src="https://images.pexels.com/photos/38537/woodland-road-falling-leaf-natural-38537.jpeg" height="600px"/>
 									<Image src="https://images.pexels.com/photos/1028707/pexels-photo-1028707.jpeg" height="600px"/>
+									<Image src="https://images.pexels.com/photos/269583/pexels-photo-269583.jpeg" height="600px"/>
+									<Image src="https://images.pexels.com/photos/1024992/pexels-photo-1024992.jpeg" height="600px"/>
+									<Image src="https://images.pexels.com/photos/1067194/pexels-photo-1067194.jpeg" height="600px"/>
+									<Image src="https://images.pexels.com/photos/1024975/pexels-photo-1024975.jpeg" height="600px"/>
+									<Image src="https://images.pexels.com/photos/323148/pexels-photo-323148.jpeg" height="600px"/>
+									<Image src="https://images.pexels.com/photos/220515/pexels-photo-220515.jpeg" height="600px"/>
+									<Image src="https://images.pexels.com/photos/207997/pexels-photo-207997.jpeg" height="600px"/>
 								</pages>
 							</Carousel>
 							<Button
@@ -62,6 +69,22 @@
 									<Button text="{i18n>layoutPublishButton}" icon="sap-icon://outbox" type="Accept"/>
 									<Button text="{i18n>layoutDraftButton}" icon="sap-icon://save"/>
 								</Toolbar>
+							</IconTabFilter>
+							<IconTabFilter text="{i18n>DataFilter}"
+										   key="db">
+								<List headerText="{i18n>ProductListHeader}"
+									  width="auto"
+									  items="{/ProductSet}">
+									  <items>
+									  	<ObjectListItem
+											title="{Name}"
+											number="{Price}"											
+											intro="{ProductID}"
+											numberUnit="{CurrencyCode}"
+										  />
+
+									  </items>
+								</List>
 							</IconTabFilter>
 						</items>
 					</IconTabBar>
